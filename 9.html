@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenShift for Gabon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      #hero-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .section {
+        padding: 50px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+      .section img {
+        width: 35%;
+        height: auto;
+        /* border-radius: 10px; */
+      }
+      .section-content {
+        width: 40%;
+        padding: 0 20px;
+      }
+      .section-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .section-text {
+        font-size: 1.25rem;
+        line-height: 1.6;
+      }
+
+      .stats-section {
+        background-color: #ffffff;
+        padding: 50px 0;
+        text-align: center;
+      }
+      .stats-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .stat {
+        width: 30%;
+        padding: 20px;
+        margin: 10px;
+        /* background-color: #f1f5f9; */
+        /* border-radius: 10px; */
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+      }
+      .stat-number {
+        font-size: 3rem;
+        font-weight: bold;
+        /* color: #007acc; */
+      }
+      .stat-text {
+        font-size: 1.25rem;
+        margin-top: 10px;
+        opacity: 60%;
+      }
+
+      .flags-section {
+        padding: 50px 0;
+        background-color: #f8fafc;
+        text-align: center;
+      }
+      .flags-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        gap: 50px;
+      }
+      .flag {
+        flex: 0 0 auto;
+        /* width: 120px; */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body class="">
+    <!--  -->
+    <section
+      id="header"
+      class="hidden absolute bottom-0 left-0 right-0 bg-white/10 h-[70px] flex items-center px-[100px] border-b border-b-black"
+    >
+      <h2 class="font-bold text-xl flex gap-x-[5px]">
+        <span class="text-green-400">OpenShift</span
+        ><span class="text-yellow-400">4</span
+        ><span class="text-blue-400">Gabon</span>
+      </h2>
+    </section>
+
+    <!--  -->
+    <section
+      id="hero"
+      class="h-screen w-full bg-black flex items-end p-[100px] panel"
+    >
+      <p
+        class="text-white text-5xl leading-[3.5rem] max-w-[1000px] bg-white/0 p-[50px] rellax"
+        data-rellax-speed="-4"
+      >
+        Empower Gabonese businesses to <span>scale</span>,
+        <span>innovate</span>, and <span>thrive</span> with OpenShift's robust
+        cloud solutions.
+      </p>
+    </section>
+    <!--  -->
+    <section id="advantages" class="py-[100px] panel bg-white">
+      <h2 class="mb-[50px] hidden text-center text-2xl font-semibold">
+        Potential Impact in Gabon
+      </h2>
+      <div class="section">
+        <img
+          src="https://placehold.co/400x400"
+          alt="Scalable Infrastructure"
+          class="rellax"
+          data-rellax-speed="1"
+          data-aos="fade-left"
+        />
+        <div class="section-content rellax" data-rellax-speed="-1">
+          <h2 class="section-title">Scalable Infrastructure</h2>
+          <p class="section-text">
+            OpenShift provides scalable infrastructure that grows with your
+            business needs, ensuring that your technology investments adapt as
+            your company expands.
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="section">
+        <img
+          src="https://placehold.co/400x400"
+          alt="Enhanced Security"
+          class="rellax"
+          data-rellax-speed="1"
+          data-aos="fade-left"
+        />
+        <div class="section-content rellax" data-rellax-speed="2">
+          <h2 class="section-title">Enhanced Security</h2>
+          <p class="section-text">
+            Benefit from enterprise-grade security to protect your data and
+            applications, keeping Gabonese businesses secure and compliant with
+            local regulations.
+          </p>
+        </div>
+      </div>
+      <!--  -->
+      <div class="section">
+        <img
+          src="https://placehold.co/400x400"
+          alt="Local Data Sovereignty"
+          class="rellax"
+          data-rellax-speed="1"
+          data-aos="fade-left"
+        />
+        <div class="section-content rellax" data-rellax-speed="2">
+          <h2 class="section-title">Local Data Sovereignty</h2>
+          <p class="section-text">
+            Keep your data within Gabon to meet regulatory requirements and
+            maintain complete control over your critical information.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- Statistics Section -->
+    <section
+      class="stats-section bg-black px-[100px] py-[200px] text-white panel"
+    >
+      <h2 class="mb-[50px] text-2xl font-semibold">
+        Potential Impact in Gabon
+      </h2>
+      <div class="stats-container">
+        <div class="stat" data-aos="fade-up">
+          <div class="stat-number">2.3M</div>
+          <div class="stat-text">Number of Lives to Impact</div>
+        </div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="500">
+          <div class="stat-number">1,500+</div>
+          <div class="stat-text">Businesses To Transformed</div>
+        </div>
+        <div class="stat" data-aos="fade-up" data-aos-delay="1000">
+          <div class="stat-number">10,000+</div>
+          <div class="stat-text">Job Opportunities To Be Created</div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <!-- Governments Using OpenShift Section -->
+    <section class="flags-section px-[100px] py-[200px] panel bg-white">
+      <h2 class="mb-[50px] text-2xl font-semibold">
+        Governments Using OpenShift
+      </h2>
+      <div class="flags-container">
+        <img
+          src="https://placehold.co/150x90"
+          alt="Country 1"
+          class="flag"
+          data-aos="fade-left"
+          data-aos-delay="0"
+        />
+        <img
+          src="https://placehold.co/150x90"
+          alt="Country 2"
+          class="flag"
+          data-aos="fade-left"
+          data-aos-delay="300"
+        />
+        <img
+          src="https://placehold.co/150x90"
+          alt="Country 3"
+          class="flag"
+          data-aos="fade-left"
+          data-aos-delay="600"
+        />
+        <img
+          src="https://placehold.co/150x90"
+          alt="Country 4"
+          class="flag"
+          data-aos="fade-left"
+          data-aos-delay="900"
+        />
+        <img
+          src="https://placehold.co/150x90"
+          alt="Country 5"
+          class="flag"
+          data-aos="fade-left"
+          data-aos-delay="1200"
+        />
+      </div>
+    </section>
+    <footer class="bg-gray-800 text-white py-6 text-center">
+      <div>Thank you for exploring OpenShift for Gabon</div>
+    </footer>
+
+    <script>
+      var rellax = new Rellax(".rellax");
+      AOS.init();
+    </script>
+  </body>
+</html>
