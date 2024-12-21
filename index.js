@@ -7,6 +7,7 @@ app.use(express.static("dist"));
 app.get("/", (req, res) => {
   res.sendFile("./dist/index.html");
 });
+//
 
 app.get("/simulate-crash", (req, res) => {
   res.send("Simulating Server Crash!");
